@@ -1,0 +1,194 @@
+/* -----------------------------------------------
+    TABLES
+-------------------------------------------------- */
+
+/* Grade Record - Student Page */
+#record {
+    text-align: center;
+    width: 100%;
+    margin: 0 0 2em 0;
+}
+
+#record th {
+    font-weight: normal;
+    color: #21561e;
+}
+
+#record tbody td {
+    color: #21561e;
+    font-weight: normal;
+}
+
+#record tbody tr {
+    line-height: 40px;
+}
+
+#record .bottom_border {
+    border-bottom: 1px solid rgba(33, 86, 30, 0.2);
+}
+
+/* Grade Record - Student Page */
+
+/* Attendance (Day) - Instructor */
+#att_students_list {
+    text-align: center;
+    width: 100%;
+    margin: 0 0 2em 0;
+}
+
+#att_students_list th {
+    font-weight: normal;
+    color: #21561e;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(33, 86, 30, 0.2);
+}
+
+#att_students_list tbody td {
+    color: #21561e;
+    font-weight: normal;
+}
+
+#att_students_list td {
+    line-height: 35px;
+}
+
+#att_students_list .bottom_border {
+    border-bottom: 1px solid rgba(33, 86, 30, 0.2);
+}
+
+/* Attendance (Day) - Instructor */
+
+/* Attendance (Per student) - Instructor */
+#attendance_list {
+    text-align: center;
+    width: 100%;
+    margin: 0 0 2em 0;
+}
+
+#attendance_list th {
+    font-weight: normal;
+    color: #21561e;
+    border-bottom: 1px solid rgba(33, 86, 30, 0.2);
+}
+
+#attendance_list tbody td {
+    color: #21561e;
+    font-weight: normal;
+}
+
+#attendance_list td {
+    line-height: 35px;
+}
+
+#attendance_list .bottom_border {
+    border-bottom: 1px solid rgba(33, 86, 30, 0.2);
+}
+/* Attendance (Per student) - Instructor */
+
+/* Schedule (Per Sem) - Student */
+#sched {
+    text-align: center;
+    width: 100%;
+}
+
+#sched th {
+    font-weight: normal;
+    color: #21561e;
+    margin-bottom: 10px;
+}
+
+#sched tbody tr {
+    line-height: 40px;
+}
+
+#sched .bottom_border {
+    border-bottom: 1px solid rgba(33, 86, 30, 0.2);
+}
+/* Schedule (Per Sem) - Student */
+
+/* Subjects List - Instructor */
+#my-subjects_list {
+    text-align: center;
+    width: 100%;
+    overflow-y: auto;
+}
+
+#my-subjects_list th {
+    font-weight: normal;
+    color: #21561e;
+    margin-bottom: 10px;
+}
+
+#my-subjects_list tbody tr {
+    line-height: 40px;
+}
+
+#my-subjects_list .head {
+    cursor: pointer;
+}
+
+#my-subjects_list .bottom_border {
+    border-bottom: 1px solid rgba(33, 86, 30, 0.2);
+}
+/* Subjects List - Instructor */
+
+/* Grade List - Instructor */
+#grades_list {
+    text-align: center;
+    width: 100%;
+    overflow-y: auto;
+}
+
+#grades_list tbody td {
+    color: #21561e;
+    font-weight: normal;
+}
+
+#grades_list th {
+    font-weight: normal;
+    color: #21561e;
+    margin-bottom: 10px;
+}
+
+#grades_list tbody tr {
+    line-height: 40px;
+}
+
+#grades_list .head {
+    cursor: pointer;
+}
+
+#grades_list .bottom_border {
+    border-bottom: 1px solid rgba(33, 86, 30, 0.2);
+}
+/* Grade List - Instructor */
+
+/* Grade List - Instructor */
+#view_students_list {
+    text-align: center;
+    width: 100%;
+    overflow-y: auto;
+}
+
+#view_students_list tbody td {
+    color: #21561e;
+    font-weight: normal;
+}
+
+#view_students_list th {
+    font-weight: normal;
+    color: #21561e;
+    margin-bottom: 10px;
+}
+
+#view_students_list tbody tr {
+    line-height: 40px;
+}
+
+#view_students_list .head {
+    cursor: pointer;
+}
+
+#view_students_list .bottom_border {
+    border-bottom: 1px solid rgba(33, 86, 30, 0.2);
+}

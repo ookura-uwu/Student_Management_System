@@ -1,0 +1,929 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+@import "https://fonts.googleapis.com/css?family=UnifrakturMaguntia:300,400,500,600,700";
+p {
+    font-family: sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+html, body {
+    font: sans-serif;
+    font-weight: lighter;
+    font-size: 100%;
+}
+
+table.dataTable tbody td.no-padding {
+    padding: 0;
+}
+
+div.slider {
+    display: none;
+}
+
+.breadcrumb > .breadcrumb-item {
+    font-size: 13px;
+}
+
+.text-green {
+    color: #21561e;
+}
+.text-crimson {
+    color: #dc143c;
+}
+
+.btn-crimson {
+    background: #dc143c;
+}
+
+.modal-header-green {
+    background-color: #21561e;    
+}
+
+.modal-header-crimson {
+    background-color: #dc143c;
+}
+/*.dataTable > thead > tr > th[class*="sort"]:after,
+.dataTable > thead > tr > th[class*="sort"]:before{
+    content: "" !important;
+    background: none !important;
+}
+
+table.dataTable thead > tr > th.sorting_asc, 
+table.dataTable thead > tr > th.sorting_desc, 
+table.dataTable thead > tr > th.sorting, 
+table.dataTable thead > tr > td.sorting_asc, 
+table.dataTable thead > tr > td.sorting_desc, 
+table.dataTable thead > tr > td.sorting {
+    padding-right: inherit;
+}*/
+.tdata > tr:nth-child(odd) {
+  background-color: #f2f2f2
+}
+#text-logo {
+    font-family: "UnifrakturMaguntia";
+}
+.the-title {
+    font-weight: lighter;
+    margin-right: 10px;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 15px 10px;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    /*z-index: 2;*/
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.navbar-green {
+    background-color: #21561e;
+}
+
+.btn-green {
+    background-color: #21561e;
+}
+
+.bg-green {
+    background-color: #21561e;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #21561e;
+    margin: 40px 0;
+}
+
+#mark_as_present, #mark_as_absent:hover{
+    cursor: pointer;
+}
+
+.swipe-area {
+    position: absolute;
+    width: 30px;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: transparent;
+    z-index: 0;
+}
+
+.child-color {
+    background-color: #F8F8F8;
+}
+
+.row-gray {
+    background-color: #f2f2f2;
+}
+
+.c-green {
+    color: #21561e;
+    font-weight: lighter;
+}
+
+.c-green-header {
+    color: #21561e;
+    font-weight: lighter;
+}
+
+#profile {
+    width: 100%;
+}
+
+#profile th {
+    font-weight: normal;
+    color: #21561e;
+}
+
+#profile tbody tr {
+    height: 40px;
+}
+
+#student_details {
+    width: 100%;
+}
+
+#student_details tbody tr {
+    padding: 0;
+}
+
+#subjects_details {
+    width: 100%;
+}
+
+#subjects_details tbody tr {
+    padding: 0 !important;
+}
+
+.mini {
+    height: 25px;
+    width: 25px;
+    font-size: 13px;
+    line-height: -1px;
+    text-indent: -2px;
+}
+
+.col-centered {
+    margin: 0 auto;
+    float: none;
+}
+
+/* -----------------------------------------------
+    TABLES
+-------------------------------------------------- */
+
+/* Grade Record - Student Page */
+#record {
+    text-align: center;
+    width: 100%;
+    margin: 0 0 2em 0;
+}
+
+#record th {
+    font-weight: normal;
+    color: #21561e;
+}
+
+#record tbody td {
+    color: #21561e;
+    font-weight: normal;
+}
+
+#record tbody tr {
+    line-height: 40px;
+}
+
+#record .bottom_border {
+    border-bottom: 1px solid rgba(33, 86, 30, 0.2);
+}
+
+/* Grade Record - Student Page */
+
+/* Attendance (Day) - Instructor */
+#att_students_list {
+    text-align: center;
+    width: 100%;
+    margin: 0 0 2em 0;
+}
+
+#att_students_list th {
+    font-weight: normal;
+    color: #21561e;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(33, 86, 30, 0.2);
+}
+
+#att_students_list tbody td {
+    color: #21561e;
+    font-weight: normal;
+}
+
+#att_students_list td {
+    line-height: 35px;
+}
+
+#att_students_list .bottom_border {
+    border-bottom: 1px solid rgba(33, 86, 30, 0.2);
+}
+
+/* Attendance (Day) - Instructor */
+
+/* Attendance (Per student) - Instructor */
+#attendance_list {
+    text-align: center;
+    width: 100%;
+    margin: 0 0 2em 0;
+}
+
+#attendance_list th {
+    font-weight: normal;
+    color: #21561e;
+    border-bottom: 1px solid rgba(33, 86, 30, 0.2);
+}
+
+#attendance_list tbody td {
+    color: #21561e;
+    font-weight: normal;
+}
+
+#attendance_list td {
+    line-height: 35px;
+}
+
+#attendance_list .bottom_border {
+    border-bottom: 1px solid rgba(33, 86, 30, 0.2);
+}
+/* Attendance (Per student) - Instructor */
+
+/* Schedule (Per Sem) - Student */
+#sched {
+    text-align: center;
+    width: 100%;
+}
+
+#sched th {
+    font-weight: normal;
+    color: #21561e;
+    margin-bottom: 10px;
+}
+
+#sched tbody tr {
+    line-height: 40px;
+}
+
+#sched .bottom_border {
+    border-bottom: 1px solid rgba(33, 86, 30, 0.2);
+}
+
+#instructor_schedule {
+    text-align: center;
+    width: 100%;
+}
+
+#instructor_schedule th {
+    font-weight: normal;
+    color: #21561e;
+    margin-bottom: 10px;
+}
+
+#instructor_schedule tbody tr {
+    line-height: 40px;
+}
+
+#instructor_schedule .bottom_border {
+    border-bottom: 1px solid rgba(33, 86, 30, 0.2);
+}
+/* Schedule (Per Sem) - Student */
+
+/* Subjects List - Instructor */
+#my-subjects_list {
+    text-align: center;
+    width: 100%;
+    overflow-y: auto;
+}
+
+#my-subjects_list th {
+    font-weight: normal;
+    color: #21561e;
+    margin-bottom: 10px;
+}
+
+#my-subjects_list tbody tr {
+    line-height: 40px;
+}
+
+#my-subjects_list .head {
+    cursor: pointer;
+}
+
+#my-subjects_list .bottom_border {
+    border-bottom: 1px solid rgba(33, 86, 30, 0.2);
+}
+/* Subjects List - Instructor */
+
+/* Grade List - Instructor */
+#grades_list {
+    text-align: center;
+    width: 100%;
+    overflow-y: auto;
+}
+
+#grades_list tbody td {
+    color: #21561e;
+    font-weight: normal;
+}
+
+#grades_list th {
+    font-weight: normal;
+    color: #21561e;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(33, 86, 30, 0.2);
+}
+
+#grades_list tbody tr {
+    line-height: 40px;
+}
+
+#grades_list .head {
+    cursor: pointer;
+}
+
+#grades_list .bottom_border {
+    border-bottom: 1px solid rgba(33, 86, 30, 0.2);
+}
+/* Grade List - Instructor */
+
+/* View student List - Instructor */
+#view_students_list, #v_current_list {
+    text-align: center;
+    width: 100%;
+    overflow-y: auto;
+}
+
+#view_students_list, #v_current_list tbody td {
+    color: #21561e;
+    font-weight: normal;
+}
+
+#view_students_list, #v_current_list th {
+    font-weight: normal;
+    color: #21561e;
+    margin-bottom: 10px;
+}
+
+#view_students_list, #v_current_list tbody tr {
+    line-height: 40px;
+}
+
+#view_students_list, #v_current_list .head {
+    border-bottom: 1px solid rgba(33, 86, 30, 0.2);
+}
+
+#view_students_list, #v_current_list .bottom_border {
+    border-bottom: 1px solid rgba(33, 86, 30, 0.2);
+}
+/* View student List - Instructor */
+
+/* Admin List - Administrator */
+#admins_list {
+    text-align: center;
+    width: 100%;
+    margin: 0 0 2em 0;
+}
+
+#admins_list th {
+    font-weight: normal;
+    color: #21561e;
+    border-bottom: 1px solid rgba(33, 86, 30, 0.2);
+}
+
+#admins_list tbody td {
+    color: #21561e;
+    font-weight: normal;
+}
+
+#admins_list td {
+    line-height: 35px;
+}
+
+#admins_list .bottom_border {
+    border-bottom: 1px solid rgba(33, 86, 30, 0.2);
+}
+/* Admin List - Administrator */
+
+/* Students List - Administrator */
+#students_list {
+    text-align: center;
+    width: 100%;
+    overflow-y: auto;
+}
+
+#students_list tbody td {
+    color: #21561e;
+    font-weight: normal;
+    padding: 5px;
+}
+
+#students_list th {
+    font-weight: normal;
+    color: #21561e;
+    margin-bottom: 10px;
+}
+
+/*#students_list tbody tr {
+    line-height: 40px;
+}*/
+
+#students_list .head {
+    cursor: pointer;
+}
+
+#students_list .bottom_border {
+    border-bottom: 1px solid rgba(33, 86, 30, 0.2);
+}
+/* Students List - Administrator */
+
+/* Subjects List - Administrator */
+#subjects_list, #v_subject_current_list {
+    width: 100%;
+    overflow-y: auto;
+}
+
+#subjects_list, #v_subject_current_list th {
+    font-weight: normal;
+    color: #21561e;
+    margin-bottom: 10px;
+}
+
+#subjects_list, #v_subject_current_list tbody tr {
+    line-height: 40px;
+}
+
+#subjects_list, #v_subject_current_list .head {
+    cursor: pointer;
+}
+
+#subjects_list, #v_subject_current_list .bottom_border {
+    border-bottom: 1px solid rgba(33, 86, 30, 0.2);
+}
+#subjects_list, #v_subject_current_list a {
+    font-size: 14px;
+}
+/* Subjects List - Administrator */
+
+
+/* Sections List - Administrator */
+#sections_list {
+    text-align: center;
+    width: 100%;
+    overflow-y: auto;
+}
+
+#sections_list th {
+    font-weight: normal;
+    color: #21561e;
+    margin-bottom: 10px;
+}
+
+#sections_list tbody tr {
+    line-height: 40px;
+}
+
+#sections_list .head {
+    cursor: pointer;
+}
+
+#sections_list .bottom_border {
+    border-bottom: 1px solid rgba(33, 86, 30, 0.2);
+}
+#sections_list a {
+    font-size: 14px;
+}
+/* Sections List - Administrator */
+
+/* Instructors List - Administrator */
+#instructors_list {
+    text-align: center;
+    width: 100%;
+    overflow-y: auto;
+}
+
+#instructors_list th {
+    font-weight: normal;
+    color: #21561e;
+    margin-bottom: 10px;
+}
+
+#instructors_list tbody tr {
+    line-height: 40px;
+}
+
+#instructors_list .bottom_border {
+    border-bottom: 1px solid rgba(33, 86, 30, 0.2);
+}
+/* Instructors List - Administrator */
+
+/* (Assign Subject) Instructors List - Administrator */
+#a_instructors_list {
+    text-align: center;
+    width: 100%;
+    overflow-y: auto;
+}
+
+#a_instructors_list th {
+    font-weight: normal;
+    color: #21561e;
+    margin-bottom: 10px;
+}
+
+#a_instructors_list tbody tr {
+    line-height: 40px;
+}
+
+#a_instructors_list .bottom_border {
+    border-bottom: 1px solid rgba(33, 86, 30, 0.2);
+}
+/* (Assign Subject) Instructors List - Administrator */
+
+/* (Assign Subject) Instructors List - Administrator */
+#ai_subjects_list {
+    text-align: center;
+    width: 100%;
+    overflow-y: auto;
+}
+
+#ai_subjects_list th {
+    font-weight: normal;
+    color: #21561e;
+    margin-bottom: 10px;
+}
+
+#ai_subjects_list tbody tr {
+    line-height: 34px;
+}
+
+#ai_subjects_list .bottom_border {
+    border-bottom: 1px solid rgba(33, 86, 30, 0.2);
+}
+/* (Assign Subject) Instructors List - Administrator */
+
+/* Recitation List - Administrator */
+#attendance_table {
+    text-align: center;
+    width: 100%;
+}
+
+#attendance_table th {
+    font-weight: lighter !important;
+    color: #21561e !important;
+    margin-bottom: 10px !important;
+    border-bottom: 1px solid rgba(33, 86, 30, 0.2) !important;
+}
+
+#attendance_table tbody tr {
+    line-height: 34px !important;
+}
+
+#attendance_table .bottom_border {
+    border-bottom: 1px solid rgba(33, 86, 30, 0.2) !important;
+}
+
+#recitations_list {
+    text-align: center;
+    width: 100%;
+}
+
+#recitations_list th {
+    font-weight: lighter !important;
+    color: #21561e !important;
+    margin-bottom: 10px !important;
+    border-bottom: 1px solid rgba(33, 86, 30, 0.2) !important;
+}
+
+#recitations_list tbody tr {
+    line-height: 34px !important;
+}
+
+#recitations_list .bottom_border {
+    border-bottom: 1px solid rgba(33, 86, 30, 0.2) !important;
+}
+
+#examinations_list {
+    text-align: center;
+    width: 100%;
+}
+
+#examinations_list th {
+    font-weight: lighter !important;
+    color: #21561e !important;
+    margin-bottom: 10px !important;
+    border-bottom: 1px solid rgba(33, 86, 30, 0.2) !important;
+}
+
+#examinations_list tbody tr {
+    line-height: 34px !important;
+}
+
+#examinations_list .bottom_border {
+    border-bottom: 1px solid rgba(33, 86, 30, 0.2) !important;
+}
+
+#quizzess_list {
+    text-align: center;
+    width: 100%;
+}
+
+#quizzess_list th {
+    font-weight: lighter !important;
+    color: #21561e !important;
+    margin-bottom: 10px !important;
+    border-bottom: 1px solid rgba(33, 86, 30, 0.2) !important;
+}
+
+#quizzess_list tbody tr {
+    line-height: 34px !important;
+}
+
+#quizzess_list .bottom_border {
+    border-bottom: 1px solid rgba(33, 86, 30, 0.2) !important;
+}
+
+/* Recitation List - Administrator */
+
+/* (Assign) Sections List - Administrator */
+#a_sections_list {
+    text-align: center;
+    width: 100%;
+    overflow-y: auto;
+}
+
+#a_sections_list th {
+    font-weight: bold;
+    color: #21561e;
+    margin-bottom: 10px;
+}
+
+#a_sections_list tbody tr {
+    line-height: 33px;
+}
+
+#a_sections_list .bottom_border {
+    border-bottom: 1px solid rgba(33, 86, 30, 0.2);
+}
+#a_sections_list a {
+    font-size: 14px;
+}
+/* (Assign) Sections List - Administrator */
+
+/* (Assign) Subjects List - Administrator */
+#a_sections_list, #s_subjects_list {
+    text-align: center;
+    width: 100%;
+    overflow-y: auto;
+}
+
+#a_sections_list, #s_subjects_list th {
+    font-weight: normal;
+    color: #21561e;
+    margin-bottom: 10px;
+}
+
+#a_sections_list, #s_subjects_list tbody tr {
+    line-height: 30px;
+}
+
+#a_sections_list, #s_subjects_list .bottom_border {
+    border-bottom: 1px solid rgba(33, 86, 30, 0.2);
+}
+
+/* (Assign) Subjects List - Administrator */
+
+/* (Assign) Students List - Administrator */
+#a_students_list, #s_students_list {
+    text-align: center;
+    width: 100%;
+    overflow-y: auto;
+}
+
+#a_students_list, #s_students_list th {
+    font-weight: lighter;
+    color: #21561e;
+    margin-bottom: 10px;
+}
+
+#a_students_list, #s_students_list tbody tr {
+    line-height: 30px;
+}
+
+#a_students_list, #s_students_list .bottom_border {
+    border-bottom: 1px solid rgba(33, 86, 30, 0.2);
+}
+#a_students_list, #s_students_list a {
+    font-size: 14px;
+}
+/* (Assign) Students List - Administrator */
+
+/* -----------------------------------------------
+    SIDEBAR STYLE
+-------------------------------------------------- */
+
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250;
+    height: 100vh;
+    z-index: 99999;
+    background: #FFFFFF;
+    color: #21561e;
+    transition: all 0.3s;
+    overflow-y: auto;
+
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 998;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+#sidebar .sidebar-header {
+    padding: 0;
+    background: #21561e;
+    color: #fff;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(33, 86, 30, 0.2);;
+}
+
+#sidebar ul p {
+    color: #ababab;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: #fff;
+    background: #21561e;
+}
+
+#sidebar ul li.active > a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #21561e;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #006400;
+    color: #fff;
+}
+
+/* -----------------------------------------------
+    CONTENT STYLE
+-------------------------------------------------- */
+
+#content {
+    width: calc(100% - 250px);
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#content.active {
+    width: 100%;
+}
+
+#sidebarCollapse {
+    display: none;
+}
+#dismiss {
+    display: none;
+}
+
+.float {
+    display: none;
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    bottom: 20px;
+    left: 20px;
+    background-color: #006600;
+    opacity: 0.5
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px transparent;
+    cursor: pointer;
+}
+
+.icon-float {
+    margin-top: 15px;
+}
+/* -----------------------------------------------
+    MEDIAQUERIES
+-------------------------------------------------- */
+
+@media (max-width: 800px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #content {
+        width: 100%;
+        font-size: 100%;
+    }
+    #content.active {
+        width: calc(100% - 250px);
+    }
+    #sidebarCollapse {
+        display: block;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+
+    html, body {
+        font-size: 100%;
+    }
+
+    #text-logo {
+        font-size: 100%;
+    }
+
+    #sidebar ul li a {
+        padding: 10px;
+        font-size: .9em;
+        font-weight: normal;
+        display: block;
+    }
+
+    .custom th, td {
+        font-size: 13px;
+        font-weight: normal
+    }
+}
+
+@media (max-width: 768px) {
+    .float {
+        display: block;
+    }
+}
+
